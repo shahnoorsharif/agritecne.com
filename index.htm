@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agritecne – Launching Soon</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #e6f2ef, #cde7db);
+    color: #0f3d2f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: grow 3s infinite alternate;
+  }
+  @keyframes grow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05) translateY(-5px); }
+    100% { transform: scale(1); }
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    animation: fadeIn 3s ease-in-out;
+  }
+  .highlight { font-weight: bold; color: #14512a; }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  input[type="email"] {
+    padding: 0.8rem;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #0f3d2f;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  button {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f3d2f;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover { background-color: #14512a; }
+  footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+    color: #14512a;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    p { font-size: 1rem; }
+    input[type="email"] { width: 200px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="logo">🌱 Agritecne</div>
+<h1>Launching Soon</h1>
+<p>
+  <span class="highlight">Vision:</span> Establish Qatar as a regional hub for verified carbon credits.<br>
+  <span class="highlight">Mission:</span> Transparent, blockchain-enabled marketplace ensuring ESG compliance and investor-grade reporting.<br>
+  <span class="highlight">Strategic Alignment:</span> Supporting Qatar’s National Vision 2030, COP28 commitments, and global carbon neutrality goals.
+</p>
+
+<form>
+  <input type="email" placeholder="Enter your email" required>
+  <button type="submit">Notify Me</button>
+</form>
+
+<footer>© 2025 Agritecne</footer>
+
+</body>
+</html>
