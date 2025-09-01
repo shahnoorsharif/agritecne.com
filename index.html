@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agritecne – Launching Soon</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #e0f7e9, #c2f0d2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    color: #1a3d2f;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 3s ease-in-out;
+  }
+  .logo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    animation: growPlant 3s infinite alternate;
+  }
+  @keyframes growPlant {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1) translateY(-5px); }
+    100% { transform: scale(1); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input[type="email"] {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  button {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a3d2f;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background-color: #14512a;
+  }
+  footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+    color: #14512a;
+  }
+</style>
+</head>
+<body>
+
+<div class="logo">🌱 Agritecne</div>
+<h1>We’re Growing Something Big</h1>
+<p>Our platform to revolutionize agriculture technology is coming soon. Stay tuned!</p>
+
+<form>
+  <input type="email" placeholder="Enter your email" required>
+  <button type="submit">Notify Me</button>
+</form>
+
+<footer>© 2025 Agritecne</footer>
+
+</body>
+</html>
